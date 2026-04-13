@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus On Me - Privacy Policy / 개인정보처리방침</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1714;
+      color: #e0dcd8;
+      line-height: 1.75;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 40px;
+    }
+    .lang-switch button {
+      padding: 8px 20px;
+      border: 1px solid #ff7f11;
+      border-radius: 20px;
+      background: transparent;
+      color: #ff7f11;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-switch button.active {
+      background: #ff7f11;
+      color: #fff;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    h1 span { color: #ff7f11; }
+    .date {
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ff7f11;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+    p, li {
+      font-size: 15px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+    li { margin-bottom: 6px; }
+    strong { color: rgba(255,255,255,0.9); }
+    a { color: #ff7f11; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.2);
+    }
+    .section { display: none; }
+    .section.active { display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <button class="active" onclick="switchLang('ko')">한국어</button>
+      <button onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- 한국어 -->
+    <div id="ko" class="section active">
+      <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
+      <h1>개인정보처리방침</h1>
+      <p class="date">시행일: 2026년 4월 12일</p>
+
+      <p>LIVX(이하 "회사")는 「Focus On Me」(이하 "앱") 이용자의 개인정보를 소중히 여기며, 관련 법령에 따라 아래와 같이 개인정보처리방침을 수립·공개합니다.</p>
+
+      <h2>1. 수집하는 개인정보</h2>
+      <p>본 앱은 <strong>별도의 회원가입이나 로그인 절차가 없으며</strong>, 서버로 개인정보를 전송하지 않습니다.</p>
+      <p>앱에서 입력하는 모든 데이터(루틴, 일기, 사진, 할 일, 통계 등)는 <strong>사용자의 기기 내에만 저장</strong>되며, 외부 서버로 전송되지 않습니다.</p>
+
+      <h2>2. 기기 내 저장 데이터</h2>
+      <p>앱의 기능 제공을 위해 다음 데이터가 기기 로컬 저장소(AsyncStorage)에 저장됩니다:</p>
+      <ul>
+        <li>사용자 이름 (앱 내 표시용, 닉네임)</li>
+        <li>루틴 목록 및 완료 기록</li>
+        <li>일기 내용 및 감정 기록</li>
+        <li>사진 카드 데이터</li>
+        <li>할 일 및 버킷리스트</li>
+        <li>집중 세션 기록</li>
+        <li>앱 설정 (언어, 테마, 알림 등)</li>
+        <li>패턴 잠금 설정</li>
+      </ul>
+      <p>이 데이터는 앱을 삭제하면 함께 삭제되며, 회사는 이 데이터에 접근할 수 없습니다.</p>
+
+      <h2>3. 제3자 제공</h2>
+      <p>본 앱은 사용자 데이터를 <strong>제3자에게 제공하지 않습니다.</strong></p>
+
+      <h2>4. 알림(푸시 알림)</h2>
+      <p>사용자가 루틴 알림을 설정한 경우, 기기의 로컬 알림 기능을 사용합니다. 이는 외부 서버를 거치지 않으며, 사용자가 설정한 시간에 기기에서 직접 발생합니다.</p>
+
+      <h2>5. 사진 접근 권한</h2>
+      <p>사진 카드 기능에서 기기의 사진 라이브러리 접근 권한을 요청할 수 있습니다. 선택한 사진은 앱 내에서만 사용되며, 외부로 전송되지 않습니다.</p>
+
+      <h2>6. 아동의 개인정보</h2>
+      <p>본 앱은 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+      <h2>7. 개인정보처리방침의 변경</h2>
+      <p>본 방침이 변경되는 경우, 변경 사항을 이 페이지에 게시하며 시행일을 업데이트합니다.</p>
+
+      <h2>8. 문의</h2>
+      <p>개인정보 관련 문의사항이 있으시면 아래로 연락해 주세요.</p>
+      <ul>
+        <li><strong>운영사:</strong> LIVX</li>
+        <li><strong>대표:</strong> 이소은</li>
+        <li><strong>이메일:</strong> <a href="mailto:ceo@livx.kr">ceo@livx.kr</a></li>
+      </ul>
+    </div>
+
+    <!-- English -->
+    <div id="en" class="section">
+      <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
+      <h1>Privacy Policy</h1>
+      <p class="date">Effective Date: April 12, 2026</p>
+
+      <p>LIVX ("Company") values the privacy of users of the "Focus On Me" application ("App") and has established this Privacy Policy in accordance with applicable laws.</p>
+
+      <h2>1. Information We Collect</h2>
+      <p>This App <strong>does not require registration or login</strong>, and does not transmit any personal information to external servers.</p>
+      <p>All data entered in the App (routines, diary entries, photos, to-dos, statistics, etc.) is <strong>stored only on your device</strong> and is never sent to any external server.</p>
+
+      <h2>2. Data Stored on Your Device</h2>
+      <p>The following data is stored locally on your device (AsyncStorage) to provide App functionality:</p>
+      <ul>
+        <li>Display name (nickname used within the App)</li>
+        <li>Routine lists and completion records</li>
+        <li>Diary entries and mood records</li>
+        <li>Photo card data</li>
+        <li>To-dos and bucket lists</li>
+        <li>Focus session records</li>
+        <li>App settings (language, theme, notifications, etc.)</li>
+        <li>Pattern lock settings</li>
+      </ul>
+      <p>This data is deleted when you uninstall the App. The Company has no access to this data.</p>
+
+      <h2>3. Third-Party Sharing</h2>
+      <p>This App <strong>does not share user data with any third parties.</strong></p>
+
+      <h2>4. Notifications</h2>
+      <p>If you set routine reminders, the App uses your device's local notification system. Notifications are triggered locally on your device and do not pass through any external servers.</p>
+
+      <h2>5. Photo Library Access</h2>
+      <p>The App may request access to your device's photo library for the photo card feature. Selected photos are used only within the App and are never transmitted externally.</p>
+
+      <h2>6. Children's Privacy</h2>
+      <p>This App does not intentionally collect personal information from children under the age of 14.</p>
+
+      <h2>7. Changes to This Policy</h2>
+      <p>If this Privacy Policy is updated, changes will be posted on this page with an updated effective date.</p>
+
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us:</p>
+      <ul>
+        <li><strong>Company:</strong> LIVX</li>
+        <li><strong>CEO:</strong> Soeun Lee</li>
+        <li><strong>Email:</strong> <a href="mailto:ceo@livx.kr">ceo@livx.kr</a></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      © 2026 LIVX. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
