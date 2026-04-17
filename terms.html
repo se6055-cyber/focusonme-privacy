@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus On Me - Terms of Use / 이용약관</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1714;
+      color: #e0dcd8;
+      line-height: 1.75;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 40px;
+    }
+    .lang-switch button {
+      padding: 8px 20px;
+      border: 1px solid #ff7f11;
+      border-radius: 20px;
+      background: transparent;
+      color: #ff7f11;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-switch button.active {
+      background: #ff7f11;
+      color: #fff;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    h1 span { color: #ff7f11; }
+    .date {
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ff7f11;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+    p, li {
+      font-size: 15px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+    li { margin-bottom: 6px; }
+    strong { color: rgba(255,255,255,0.9); }
+    a { color: #ff7f11; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight-box {
+      background: rgba(255,127,17,0.08);
+      border-left: 3px solid #ff7f11;
+      padding: 14px 18px;
+      margin: 16px 0;
+      border-radius: 6px;
+    }
+    .highlight-box p { margin-bottom: 0; color: rgba(255,255,255,0.85); font-size: 14px; }
+    .footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.2);
+    }
+    .footer a { color: rgba(255,127,17,0.7); }
+    .section { display: none; }
+    .section.active { display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <button class="active" onclick="switchLang('ko', event)">한국어</button>
+      <button onclick="switchLang('en', event)">English</button>
+    </div>
+
+    <!-- 한국어 -->
+    <div id="ko" class="section active">
+      <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
+      <h1>이용약관 (EULA)</h1>
+      <p class="date">시행일: 2026년 4월 12일</p>
+
+      <p>본 이용약관(End User License Agreement, 이하 "약관")은 LIVX(이하 "회사")가 제공하는 모바일 애플리케이션 「Focus On Me」(이하 "앱")의 이용에 관한 조건을 정합니다. 이용자는 앱을 설치·이용함으로써 본 약관에 동의한 것으로 간주됩니다.</p>
+
+      <h2>1. 서비스의 내용</h2>
+      <p>「Focus On Me」는 사용자의 일상 루틴 관리, 일기 작성, 할 일 기록, 집중 세션 측정, 사진 카드 작성 등의 기능을 제공하는 개인용 생산성 앱입니다.</p>
+      <p>앱은 <strong>별도의 회원가입 없이</strong> 사용 가능하며, 모든 데이터는 사용자의 기기 내에만 저장됩니다.</p>
+
+      <h2>2. 라이선스 부여</h2>
+      <p>회사는 이용자에게 본 약관의 범위 내에서 다음과 같은 <strong>비독점적·양도 불가능한 라이선스</strong>를 부여합니다.</p>
+      <ul>
+        <li>개인적이고 비상업적인 용도로 앱을 설치·이용할 권리</li>
+        <li>이용자가 합법적으로 소유 또는 통제하는 기기에서 앱을 실행할 권리</li>
+      </ul>
+      <p>이용자는 앱에 대한 리버스 엔지니어링, 역컴파일, 재배포, 복제, 2차 저작물 작성 등을 해서는 안 됩니다.</p>
+
+      <h2>3. 프리미엄 구독 서비스</h2>
+      <div class="highlight-box">
+        <p><strong>3-1. 3개월 무료 체험:</strong> 앱을 처음 설치하면 별도의 결제 수단 등록 없이 <strong>3개월간 모든 프리미엄 기능</strong>을 무료로 이용할 수 있습니다.</p>
+      </div>
+      <ul>
+        <li><strong>구독 명칭:</strong> FOM Premium</li>
+        <li><strong>구독 주기:</strong> 월 단위 자동 갱신</li>
+        <li><strong>가격:</strong> 앱 내 구독 화면 및 Apple App Store / Google Play 에 표시된 현지 통화 기준 금액</li>
+        <li><strong>결제 수단:</strong> 구매 확정 시 이용자의 Apple ID 또는 Google 계정으로 청구</li>
+      </ul>
+
+      <h2>4. 자동 갱신 및 해지</h2>
+      <ul>
+        <li>구독은 현재 기간 종료일 24시간 전까지 해지하지 않으면 <strong>자동으로 다음 기간에 갱신</strong>됩니다.</li>
+        <li>갱신 요금은 현재 기간 종료일 24시간 이내에 이용자 계정으로 청구됩니다.</li>
+        <li>해지는 언제든지 <strong>기기의 설정 &gt; 구독</strong>(iOS) 또는 <strong>Google Play &gt; 결제 및 구독 &gt; 구독</strong>(Android)에서 가능합니다.</li>
+        <li>앱을 삭제하더라도 구독은 자동으로 해지되지 않으므로, 반드시 위 경로에서 직접 해지해야 합니다.</li>
+        <li>무료 체험 기간 중 해지하면 체험 종료 시점까지 프리미엄 기능을 이용할 수 있으며, 이후에는 요금이 청구되지 않습니다.</li>
+      </ul>
+
+      <h2>5. 환불</h2>
+      <p>환불은 구매한 플랫폼(Apple App Store / Google Play)의 환불 정책에 따릅니다. 회사는 스토어를 통해 결제된 금액에 대한 직접 환불을 제공하지 않으며, 환불 요청은 아래 링크를 통해 진행해 주세요.</p>
+      <ul>
+        <li>Apple: <a href="https://support.apple.com/HT204084" target="_blank">reportaproblem.apple.com</a></li>
+        <li>Google Play: <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Google Play 환불 정책</a></li>
+      </ul>
+
+      <h2>6. 구독 만료 후의 이용</h2>
+      <p>무료 체험 기간이 종료되고 유료 구독을 하지 않을 경우, 앱은 <strong>읽기 전용 모드</strong>로 전환됩니다. 기존에 저장한 데이터는 그대로 확인 가능하지만, 새로운 데이터의 추가·수정은 제한됩니다.</p>
+
+      <h2>7. 사용자 데이터 및 책임</h2>
+      <ul>
+        <li>앱에 입력한 모든 데이터는 이용자의 기기 내에만 저장되며, 회사는 해당 데이터에 접근할 수 없습니다.</li>
+        <li>앱 삭제, 기기 변경, 기기 고장 등으로 인한 <strong>데이터 손실의 책임은 이용자에게 있습니다</strong>. 중요한 데이터는 앱 내 내보내기(Export) 기능을 통해 별도로 백업하시기 바랍니다.</li>
+        <li>이용자는 앱에 불법적·외설적·타인의 권리를 침해하는 내용을 입력해서는 안 됩니다.</li>
+      </ul>
+
+      <h2>8. 지적재산권</h2>
+      <p>앱의 이름, 로고, 디자인, 소스코드 및 관련 자료에 대한 모든 지적재산권은 회사에 귀속됩니다. 이용자가 앱 내에 직접 작성한 콘텐츠(일기, 사진 등)의 저작권은 이용자에게 있으며, 회사는 이에 대한 어떠한 권리도 주장하지 않습니다.</p>
+
+      <h2>9. 면책 조항</h2>
+      <p>앱은 "있는 그대로(AS IS)" 제공되며, 회사는 앱의 정확성·완전성·특정 목적 적합성에 대하여 명시적·묵시적 보증을 하지 않습니다.</p>
+      <p>법령에서 허용하는 최대한의 범위 내에서, 회사는 앱 이용으로 인해 발생하는 직접·간접·부수적·특별·징벌적 손해에 대해 책임을 지지 않습니다.</p>
+
+      <h2>10. 약관의 변경</h2>
+      <p>회사는 필요시 본 약관을 변경할 수 있으며, 변경 사항은 이 페이지에 게시됨과 동시에 효력이 발생합니다. 중요한 변경이 있을 경우 앱 내 공지 또는 알림을 통해 안내합니다.</p>
+
+      <h2>11. 준거법 및 관할</h2>
+      <p>본 약관은 대한민국 법률에 따라 해석되며, 본 약관과 관련된 분쟁은 서울중앙지방법원을 제1심 관할 법원으로 합니다.</p>
+
+      <h2>12. 문의</h2>
+      <ul>
+        <li><strong>운영사:</strong> LIVX</li>
+        <li><strong>대표:</strong> 이소은</li>
+        <li><strong>이메일:</strong> <a href="mailto:ceo@livx.kr">ceo@livx.kr</a></li>
+      </ul>
+    </div>
+
+    <!-- English -->
+    <div id="en" class="section">
+      <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
+      <h1>Terms of Use (EULA)</h1>
+      <p class="date">Effective Date: April 12, 2026</p>
+
+      <p>These Terms of Use (End User License Agreement, the "Terms") govern your use of the "Focus On Me" mobile application (the "App") provided by LIVX (the "Company"). By installing or using the App, you agree to be bound by these Terms.</p>
+
+      <h2>1. Description of Service</h2>
+      <p>"Focus On Me" is a personal productivity application that provides features such as routine management, diary writing, to-do lists, focus session tracking, and photo card creation.</p>
+      <p>The App can be used <strong>without any account registration</strong>, and all data is stored only on your device.</p>
+
+      <h2>2. License Grant</h2>
+      <p>The Company grants you a <strong>non-exclusive, non-transferable license</strong> to:</p>
+      <ul>
+        <li>Install and use the App for personal, non-commercial purposes;</li>
+        <li>Run the App on devices you lawfully own or control.</li>
+      </ul>
+      <p>You may not reverse engineer, decompile, redistribute, copy, or create derivative works of the App.</p>
+
+      <h2>3. Premium Subscription Service</h2>
+      <div class="highlight-box">
+        <p><strong>3-1. 3-Month Free Trial:</strong> When you first install the App, you receive <strong>3 months of free access to all premium features</strong> without requiring any payment method.</p>
+      </div>
+      <ul>
+        <li><strong>Subscription name:</strong> FOM Premium</li>
+        <li><strong>Billing period:</strong> Monthly, auto-renewing</li>
+        <li><strong>Price:</strong> The amount shown in local currency on the subscription screen within the App and on the Apple App Store / Google Play</li>
+        <li><strong>Payment method:</strong> Charged to your Apple ID or Google account at the confirmation of purchase</li>
+      </ul>
+
+      <h2>4. Auto-Renewal and Cancellation</h2>
+      <ul>
+        <li>Your subscription <strong>automatically renews</strong> for the next billing period unless canceled at least 24 hours before the end of the current period.</li>
+        <li>The renewal fee will be charged to your account within 24 hours prior to the end of the current period.</li>
+        <li>You can cancel anytime in <strong>Settings &gt; Subscriptions</strong> (iOS) or <strong>Google Play &gt; Payments and subscriptions &gt; Subscriptions</strong> (Android).</li>
+        <li>Deleting the App does not automatically cancel your subscription. You must cancel through the paths above.</li>
+        <li>If you cancel during the free trial, you can continue using premium features until the trial ends, and no charge will apply afterwards.</li>
+      </ul>
+
+      <h2>5. Refunds</h2>
+      <p>Refunds are governed by the refund policies of the platform through which you purchased (Apple App Store / Google Play). The Company does not provide direct refunds for payments made through these stores. Please use the following links to request a refund:</p>
+      <ul>
+        <li>Apple: <a href="https://support.apple.com/HT204084" target="_blank">reportaproblem.apple.com</a></li>
+        <li>Google Play: <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Google Play Refund Policy</a></li>
+      </ul>
+
+      <h2>6. Use After Subscription Expires</h2>
+      <p>If you do not subscribe after the free trial ends, the App switches to <strong>read-only mode</strong>. You can still view your existing data, but creating or modifying new data will be restricted.</p>
+
+      <h2>7. User Data and Responsibilities</h2>
+      <ul>
+        <li>All data entered in the App is stored only on your device. The Company has no access to this data.</li>
+        <li><strong>You are responsible for any data loss</strong> caused by uninstalling the App, changing devices, or device failures. Please back up important data using the in-app export feature.</li>
+        <li>You must not enter any unlawful, obscene, or infringing content in the App.</li>
+      </ul>
+
+      <h2>8. Intellectual Property</h2>
+      <p>All intellectual property rights in the App, including its name, logo, design, source code, and related materials, belong to the Company. Content you create within the App (diary entries, photos, etc.) remains yours, and the Company claims no rights to it.</p>
+
+      <h2>9. Disclaimer of Warranties</h2>
+      <p>The App is provided "AS IS" without any express or implied warranties regarding accuracy, completeness, or fitness for a particular purpose.</p>
+      <p>To the maximum extent permitted by law, the Company shall not be liable for any direct, indirect, incidental, special, or punitive damages arising from your use of the App.</p>
+
+      <h2>10. Changes to These Terms</h2>
+      <p>The Company may modify these Terms when necessary. Changes take effect when posted on this page. Material changes will be announced through in-app notices or notifications.</p>
+
+      <h2>11. Governing Law and Jurisdiction</h2>
+      <p>These Terms are governed by the laws of the Republic of Korea. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the Seoul Central District Court as the court of first instance.</p>
+
+      <h2>12. Contact</h2>
+      <ul>
+        <li><strong>Company:</strong> LIVX</li>
+        <li><strong>CEO:</strong> Soeun Lee</li>
+        <li><strong>Email:</strong> <a href="mailto:ceo@livx.kr">ceo@livx.kr</a></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      © 2026 LIVX. All rights reserved. &nbsp;|&nbsp; <a href="./">Privacy Policy</a>
+    </div>
+  </div>
+
+  <script>
+    function switchLang(lang, evt) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+      (evt && evt.target ? evt.target : event.target).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
