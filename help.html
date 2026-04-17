@@ -1,97 +1,252 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focus On Me - Help Center</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #1a1714; /* 기존 스타일과 맞춘 다크톤 */
-            color: #e0dcd8;
-            line-height: 1.75;
-            padding: 2rem 1rem;
-        }
-        .container { max-width: 800px; margin: 0 auto; }
-        h1 { color: #52b788; margin-bottom: 2rem; text-align: center; }
-        .lang-nav { text-align: center; margin-bottom: 3rem; }
-        .lang-nav a { color: #52b788; text-decoration: none; margin: 0 10px; font-weight: bold; }
-        section { background: #2a2622; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; border: 1px solid #3d3834; }
-        h2 { color: #f8f9fa; border-bottom: 1px solid #52b788; padding-bottom: 0.5rem; margin-bottom: 1rem; display: flex; align-items: center; }
-        h3 { color: #52b788; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem; }
-        ul { list-style: none; }
-        li { margin-bottom: 0.8rem; padding-left: 1.2rem; position: relative; }
-        li::before { content: "•"; color: #52b788; position: absolute; left: 0; }
-        .step { color: #bdbdbd; font-size: 0.95rem; }
-        footer { text-align: center; margin-top: 4rem; color: #757575; font-size: 0.85rem; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus On Me - Help Center / 도움말 센터</title>
+  <style>
+    /* 기존 Privacy Policy 스타일과 완벽 통일 */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1714;
+      color: #e0dcd8;
+      line-height: 1.75;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .lang-switch {
+      display: flex;
+      flex-wrap: wrap; /* 모바일 대응 */
+      gap: 8px;
+      margin-bottom: 40px;
+    }
+    .lang-switch button {
+      padding: 8px 16px;
+      border: 1px solid #ff7f11;
+      border-radius: 20px;
+      background: transparent;
+      color: #ff7f11;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-switch button.active {
+      background: #ff7f11;
+      color: #fff;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 32px;
+      letter-spacing: 0.5px;
+    }
+    h1 span { color: #ff7f11; }
+    
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ff7f11;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.9);
+      margin-top: 16px;
+      margin-bottom: 6px;
+    }
+    p, li {
+      font-size: 15px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+    li { margin-bottom: 6px; }
+    strong { color: rgba(255,255,255,0.9); }
+    
+    .footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.2);
+    }
+    .section { display: none; }
+    .section.active { display: block; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🌿 Help Center</h1>
-        
-        <div class="lang-nav">
-            <a href="#ko">한국어</a> | <a href="#en">English</a> | <a href="#ja">日本語</a> | <a href="#de">Deutsch</a>
-        </div>
-
-        <section id="ko">
-            <h2>🇰🇷 한국어 (Korean)</h2>
-            <h3>[구독 해지 방법]</h3>
-            <ul>
-                <li><span class="step">iOS (Apple): 설정 앱 > Apple ID > 구독 > Focus On Me > 구독 취소</span></li>
-                <li><span class="step">Android (Google): Play 스토어 > 프로필 > 결제 및 정기 결제 > 정기 결제 > Focus On Me > 구독 취소</span></li>
-            </ul>
-            <h3>[프로모션 코드 사용법]</h3>
-            <ul>
-                <li><span class="step">iOS: App Store > 계정 > 기프트 카드 또는 코드 교환</span></li>
-                <li><span class="step">Android: Play 스토어 > 결제 및 정기 결제 > 코드 이용</span></li>
-            </ul>
-        </section>
-
-        <section id="en">
-            <h2>🇺🇸 English</h2>
-            <h3>[How to Cancel Subscription]</h3>
-            <ul>
-                <li><span class="step">iOS (Apple): Settings > Apple ID > Subscriptions > Focus On Me > Cancel</span></li>
-                <li><span class="step">Android (Google): Play Store > Profile > Payments & Subscriptions > Subscriptions > Focus On Me > Cancel</span></li>
-            </ul>
-            <h3>[How to Use Promotion Code]</h3>
-            <ul>
-                <li><span class="step">iOS: App Store > Account > Redeem Gift Card or Code</span></li>
-                <li><span class="step">Android: Play Store > Payments & Subscriptions > Redeem code</span></li>
-            </ul>
-        </section>
-
-        <section id="ja">
-            <h2>🇯🇵 日本語 (Japanese)</h2>
-            <h3>[サブ스크리プションの解約]</h3>
-            <ul>
-                <li><span class="step">iOS: 設定 > Apple ID > サブスクリプション > Focus On Me > 解約</span></li>
-                <li><span class="step">Android: Playストア > プロフィール > お支払いと定期購入 > 定期購入 > Focus On Me > 解約</span></li>
-            </ul>
-            <h3>[コードの使用]</h3>
-            <ul>
-                <li><span class="step">iOS: App Store > アカウント > ギフトカードまたはコードを使う</span></li>
-                <li><span class="step">Android: Playストア > お支払い > コードの利用</span></li>
-            </ul>
-        </section>
-
-        <section id="de">
-            <h2>🇩🇪 Deutsch (German)</h2>
-            <h3>[Abo kündigen]</h3>
-            <ul>
-                <li><span class="step">iOS: Einstellungen > Apple ID > Abonnements > Focus On Me > Kündigen</span></li>
-                <li><span class="step">Android: Play Store > Profil > Zahlungen & Abos > Abos > Focus On Me > Kündigen</span></li>
-            </ul>
-            <h3>[Promo-Code einlösen]</h3>
-            <ul>
-                <li><span class="step">iOS: App Store > Account > Karte oder Code einlösen</span></li>
-                <li><span class="step">Android: Play Store > Zahlungen > Code einlösen</span></li>
-            </ul>
-        </section>
-
-        <footer>© 2026 Focus On Me. All rights reserved.</footer>
+  <div class="container">
+    <div class="lang-switch">
+      <button class="active" onclick="switchLang('ko')">한국어</button>
+      <button onclick="switchLang('en')">English</button>
+      <button onclick="switchLang('ja')">日本語</button>
+      <button onclick="switchLang('de')">Deutsch</button>
     </div>
+
+    <div id="ko" class="section active">
+      <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
+      <h1>도움말 센터</h1>
+      <p>Focus On Me(FOM)를 이용해 주셔서 감사합니다. 자주 묻는 질문에 대한 답변입니다.</p>
+
+      <h2>1. 구독 해지 방법</h2>
+      <p>정기 결제 해지는 앱 내에서 처리되지 않으며, 각 스토어의 계정 설정에서 직접 관리하셔야 합니다.</p>
+      
+      <h3>iOS (Apple App Store)</h3>
+      <ul>
+        <li>기기의 <strong>설정</strong> 앱 열기</li>
+        <li>상단 <strong>내 이름(Apple ID)</strong> 클릭</li>
+        <li><strong>구독</strong> 메뉴 선택</li>
+        <li>목록에서 <strong>Focus On Me</strong> 선택</li>
+        <li><strong>구독 취소</strong> 버튼 클릭</li>
+      </ul>
+
+      <h3>Android (Google Play Store)</h3>
+      <ul>
+        <li><strong>Google Play 스토어</strong> 앱 열기</li>
+        <li>오른쪽 상단 <strong>프로필 아이콘</strong> 클릭</li>
+        <li><strong>결제 및 정기 결제</strong> > <strong>정기 결제</strong> 선택</li>
+        <li>목록에서 <strong>Focus On Me</strong> 선택</li>
+        <li><strong>구독 취소</strong> 클릭</li>
+      </ul>
+
+      <h2>2. 프로모션/할인 코드 사용법</h2>
+      <p>수신하신 코드는 아래 경로에서 등록하여 사용하실 수 있습니다.</p>
+      <ul>
+        <li><strong>iOS (Apple):</strong> App Store 앱 > 오른쪽 상단 계정 아이콘 > <strong>기프트 카드 또는 코드 교환</strong></li>
+        <li><strong>Android (Google):</strong> Play 스토어 > 결제 및 정기 결제 > <strong>코드 이용</strong></li>
+      </ul>
+    </div>
+
+    <div id="en" class="section">
+      <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
+      <h1>Help Center</h1>
+      <p>Welcome to the Focus On Me Help Center. Here are the answers to frequently asked questions.</p>
+
+      <h2>1. How to Cancel Subscription</h2>
+      <p>Subscriptions are managed through your app store account settings, not within the App itself.</p>
+      
+      <h3>iOS (Apple App Store)</h3>
+      <ul>
+        <li>Open your device's <strong>Settings</strong> App</li>
+        <li>Tap <strong>Your Name (Apple ID)</strong> at the top</li>
+        <li>Tap <strong>Subscriptions</strong></li>
+        <li>Select <strong>Focus On Me</strong> from the list</li>
+        <li>Tap <strong>Cancel Subscription</strong></li>
+      </ul>
+
+      <h3>Android (Google Play Store)</h3>
+      <ul>
+        <li>Open the <strong>Google Play Store</strong> App</li>
+        <li>Tap the <strong>Profile Icon</strong> in the top right</li>
+        <li>Go to <strong>Payments & Subscriptions</strong> > <strong>Subscriptions</strong></li>
+        <li>Select <strong>Focus On Me</strong> from the list</li>
+        <li>Tap <strong>Cancel Subscription</strong></li>
+      </ul>
+
+      <h2>2. How to Use Promotion/Discount Code</h2>
+      <p>You can redeem your code through the following store menus:</p>
+      <ul>
+        <li><strong>iOS (Apple):</strong> App Store > Account Icon (Top Right) > <strong>Redeem Gift Card or Code</strong></li>
+        <li><strong>Android (Google):</strong> Play Store > Payments & Subscriptions > <strong>Redeem code</strong></li>
+      </ul>
+    </div>
+
+    <div id="ja" class="section">
+      <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
+      <h1>ヘルプセンター</h1>
+      <p>Focus On Me(FOM)をご利用いただき、誠にありがとうございます。よくあるご質問への回答です。</p>
+
+      <h2>1. サブスクリプション（定期購読）の解約方法</h2>
+      <p>定期購読の解約はアプリ内では行えません。各ストアのアカウント設定からお客様ご自身で管理していただく必要があります。</p>
+      
+      <h3>iOS (Apple App Store)</h3>
+      <ul>
+        <li>端末の<strong>「設定」</strong>アプリを開く</li>
+        <li>上部の<strong>ユーザー名 (Apple ID)</strong> をタップ</li>
+        <li><strong>「サブスクリプション」</strong>を選択</li>
+        <li>一覧から<strong>「Focus On Me」</strong>を選択</li>
+        <li><strong>「サブスクリプションをキャンセル」</strong>をタップ</li>
+      </ul>
+
+      <h3>Android (Google Play Store)</h3>
+      <ul>
+        <li><strong>Google Play ストア</strong>アプリを開く</li>
+        <li>右上の<strong>プロフィールアイコン</strong>をタップ</li>
+        <li><strong>「お支払いと定期購入」</strong> > <strong>「定期購入」</strong>を選択</li>
+        <li>一覧から<strong>「Focus On Me」</strong>を選択</li>
+        <li><strong>「定期購入を解約」</strong>をタップ</li>
+      </ul>
+
+      <h2>2. プロモーション/割引コードの使用方法</h2>
+      <p>お手持ちのコードは、以下の手順でご利用いただけます。</p>
+      <ul>
+        <li><strong>iOS (Apple):</strong> App Storeアプリ > 右上のアカウントアイコン > <strong>「ギフトカードまたはコードを使う」</strong></li>
+        <li><strong>Android (Google):</strong> Playストア > お支払いと定期購入 > <strong>「コードの利用」</strong></li>
+      </ul>
+    </div>
+
+    <div id="de" class="section">
+      <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
+      <h1>Hilfe-Center</h1>
+      <p>Vielen Dank, dass Sie Focus On Me (FOM) verwenden. Hier finden Sie Antworten auf häufig gestellte Fragen.</p>
+
+      <h2>1. Abonnement kündigen</h2>
+      <p>Abonnements werden nicht innerhalb der App, sondern über die Kontoeinstellungen Ihres jeweiligen App Stores verwaltet.</p>
+      
+      <h3>iOS (Apple App Store)</h3>
+      <ul>
+        <li>Öffnen Sie die <strong>Einstellungen</strong>-App Ihres Geräts</li>
+        <li>Tippen Sie oben auf <strong>Ihren Namen (Apple ID)</strong></li>
+        <li>Tippen Sie auf <strong>Abonnements</strong></li>
+        <li>Wählen Sie <strong>Focus On Me</strong> aus der Liste</li>
+        <li>Tippen Sie auf <strong>Abo kündigen</strong></li>
+      </ul>
+
+      <h3>Android (Google Play Store)</h3>
+      <ul>
+        <li>Öffnen Sie die <strong>Google Play Store</strong>-App</li>
+        <li>Tippen Sie oben rechts auf das <strong>Profilsymbol</strong></li>
+        <li>Gehen Sie zu <strong>Zahlungen & Abonnements</strong> > <strong>Abonnements</strong></li>
+        <li>Wählen Sie <strong>Focus On Me</strong> aus der Liste</li>
+        <li>Tippen Sie auf <strong>Abo kündigen</strong></li>
+      </ul>
+
+      <h2>2. Promotion-/Rabattcode einlösen</h2>
+      <p>Sie können Ihren Code über die folgenden Store-Menüs einlösen:</p>
+      <ul>
+        <li><strong>iOS (Apple):</strong> App Store > Account-Symbol (oben rechts) > <strong>Karte oder Code einlösen</strong></li>
+        <li><strong>Android (Google):</strong> Play Store > Zahlungen & Abonnements > <strong>Code einlösen</strong></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      © 2026 LIVX. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    /* 기존 언어 전환 스크립트 그대로 유지 */
+    function switchLang(lang) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+      // 클릭된 버튼을 active 상태로 만드는 세련된 방식 (IE 미지원하나 타겟 기기에서는 작동함)
+      if (event && event.target) {
+          event.target.classList.add('active');
+      }
+    }
+  </script>
 </body>
 </html>
