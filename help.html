@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Focus On Me - Help Center / 도움말 센터</title>
+  <title>Focus On Me - Help Center / 헬프 센터</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -80,9 +80,7 @@
       padding: 24px;
       margin-bottom: 8px;
     }
-    .bug-card h2 {
-      margin-top: 0;
-    }
+    .bug-card h2 { margin-top: 0; }
     .chat-btn {
       display: inline-block;
       margin: 12px 0 16px;
@@ -105,6 +103,24 @@
       font-size: 14px;
       color: rgba(255,255,255,0.65);
       line-height: 1.7;
+    }
+
+    /* FAQ */
+    .faq-item {
+      margin-bottom: 20px;
+    }
+    .faq-q {
+      font-size: 15px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 6px;
+    }
+    .faq-a {
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+      padding-left: 16px;
+      border-left: 2px solid rgba(255,127,17,0.4);
+      margin-bottom: 0;
     }
 
     .footer {
@@ -131,7 +147,7 @@
     <!-- ── 한국어 ── -->
     <div id="ko" class="section active">
       <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
-      <h1>도움말 센터</h1>
+      <h1>헬프 센터</h1>
       <p>Focus On Me(FOM)를 이용해 주셔서 감사합니다. 자주 묻는 질문에 대한 답변입니다.</p>
 
       <div class="bug-card">
@@ -141,6 +157,7 @@
         <div class="notice-box">
           ✅ 결제/구독 관련 문제는 앱 자체의 문제가 아니므로, 사용하시는 휴대폰 기기에 따라 <strong>구글 플레이 스토어</strong> 또는 <strong>애플 앱 스토어</strong>에 문의해주세요!
         </div>
+        <p>한국어, 영어, 독일어, 일본어 중 편하신 언어로 문의주셔도 됩니다.</p>
         <p>제보 시 아래 내용을 함께 알려주시면 더욱 빠르게 도움드릴 수 있어요 😊</p>
         <ul>
           <li>사용하시는 핸드폰 기종</li>
@@ -149,7 +166,24 @@
         <p>개발팀에서 빠르게 확인 후 수정해드릴게요!</p>
       </div>
 
-      <h2>1. 구독 해지 방법</h2>
+      <h2>1. 자주 묻는 질문</h2>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. 오늘의 스케줄(Today's Schedule) 위젯에 아무것도 나오지 않아요!</p>
+        <p class="faq-a">A. Today's Schedule 위젯은 한 번의 동기화가 필요하기 때문에, 루틴이나 일정을 추가해주시면 바로 동기화되어 정상적으로 표시됩니다.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. 위젯의 테마를 바꿀 수 있나요?</p>
+        <p class="faq-a">A. 네, 바꿀 수 있어요! 위젯의 오른쪽 상단 톱니바퀴 버튼을 눌러 테마를 바꿀 수 있습니다.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. 원하는 기능이 있어요. 건의할 수 있나요?</p>
+        <p class="faq-a">A. 네, FOM은 언제나 여러분의 의견에 귀기울인답니다. 위 "상담 채팅 바로가기"를 눌러 원하는 기능을 건의해주세요! 많은 유저들이 요청하는 기능일 경우 업데이트에 반영해드립니다.</p>
+      </div>
+
+      <h2>2. 구독 해지 방법</h2>
       <p>정기 결제 해지는 앱 내에서 처리되지 않으며, 각 스토어의 계정 설정에서 직접 관리하셔야 합니다.</p>
       <h3>iOS (Apple App Store)</h3>
       <ul>
@@ -163,16 +197,16 @@
       <ul>
         <li><strong>Google Play 스토어</strong> 앱 열기</li>
         <li>오른쪽 상단 <strong>프로필 아이콘</strong> 클릭</li>
-        <li><strong>결제 및 정기 결제</strong> > <strong>정기 결제</strong> 선택</li>
+        <li><strong>결제 및 정기 결제</strong> &gt; <strong>정기 결제</strong> 선택</li>
         <li>목록에서 <strong>Focus On Me</strong> 선택</li>
         <li><strong>구독 취소</strong> 클릭</li>
       </ul>
 
-      <h2>2. 프로모션/할인 코드 사용법</h2>
+      <h2>3. 프로모션/할인 코드 사용법</h2>
       <p>수신하신 코드는 아래 경로에서 등록하여 사용하실 수 있습니다.</p>
       <ul>
-        <li><strong>iOS (Apple):</strong> App Store 앱 > 오른쪽 상단 계정 아이콘 > <strong>기프트 카드 또는 코드 교환</strong></li>
-        <li><strong>Android (Google):</strong> Play 스토어 > 결제 및 정기 결제 > <strong>코드 이용</strong></li>
+        <li><strong>iOS (Apple):</strong> App Store 앱 &gt; 오른쪽 상단 계정 아이콘 &gt; <strong>기프트 카드 또는 코드 교환</strong></li>
+        <li><strong>Android (Google):</strong> Play 스토어 &gt; 결제 및 정기 결제 &gt; <strong>코드 이용</strong></li>
       </ul>
     </div>
 
@@ -189,6 +223,7 @@
         <div class="notice-box">
           ✅ For payment or subscription issues, please contact the <strong>Google Play Store</strong> or <strong>Apple App Store</strong> directly — these are not managed within the app.
         </div>
+        <p>Feel free to contact us in Korean, English, German, or Japanese — whichever is most comfortable for you.</p>
         <p>Please include the following details so we can assist you faster 😊</p>
         <ul>
           <li>Your device model</li>
@@ -197,7 +232,24 @@
         <p>Our team will review and fix it as soon as possible!</p>
       </div>
 
-      <h2>1. How to Cancel Subscription</h2>
+      <h2>1. Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. Nothing appears in the Today's Schedule widget!</p>
+        <p class="faq-a">A. The Today's Schedule widget requires a one-time sync. Simply add a routine or schedule, and it will sync immediately and display correctly.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. Can I change the widget theme?</p>
+        <p class="faq-a">A. Yes, you can! Tap the gear icon in the top right corner of the widget to change the theme.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. I have a feature request. Can I suggest it?</p>
+        <p class="faq-a">A. Absolutely! FOM always listens to your feedback. Tap "Start a Chat" above to submit your feature request. If many users request the same feature, we'll include it in a future update!</p>
+      </div>
+
+      <h2>2. How to Cancel Subscription</h2>
       <p>Subscriptions are managed through your app store account settings, not within the app itself.</p>
       <h3>iOS (Apple App Store)</h3>
       <ul>
@@ -211,16 +263,16 @@
       <ul>
         <li>Open the <strong>Google Play Store</strong> app</li>
         <li>Tap the <strong>Profile Icon</strong> in the top right</li>
-        <li>Go to <strong>Payments &amp; Subscriptions</strong> > <strong>Subscriptions</strong></li>
+        <li>Go to <strong>Payments &amp; Subscriptions</strong> &gt; <strong>Subscriptions</strong></li>
         <li>Select <strong>Focus On Me</strong> from the list</li>
         <li>Tap <strong>Cancel Subscription</strong></li>
       </ul>
 
-      <h2>2. How to Use a Promotion/Discount Code</h2>
+      <h2>3. How to Use a Promotion/Discount Code</h2>
       <p>You can redeem your code through the following store menus:</p>
       <ul>
-        <li><strong>iOS (Apple):</strong> App Store > Account Icon (top right) > <strong>Redeem Gift Card or Code</strong></li>
-        <li><strong>Android (Google):</strong> Play Store > Payments &amp; Subscriptions > <strong>Redeem code</strong></li>
+        <li><strong>iOS (Apple):</strong> App Store &gt; Account Icon (top right) &gt; <strong>Redeem Gift Card or Code</strong></li>
+        <li><strong>Android (Google):</strong> Play Store &gt; Payments &amp; Subscriptions &gt; <strong>Redeem code</strong></li>
       </ul>
     </div>
 
@@ -237,6 +289,7 @@
         <div class="notice-box">
           ✅ お支払い・サブスクリプションに関するご質問は、アプリ側では対応できないため、ご利用の<strong>Google Play ストア</strong>または<strong>App Store</strong>まで直接お問い合わせください。
         </div>
+        <p>韓国語・英語・ドイツ語・日本語のいずれかお好きな言語でお問い合わせいただけます。</p>
         <p>以下の情報をあわせてお知らせいただくと、より迅速にご対応できます 😊</p>
         <ul>
           <li>ご使用のスマートフォンの機種</li>
@@ -245,7 +298,24 @@
         <p>開発チームが速やかに確認・修正いたします！</p>
       </div>
 
-      <h2>1. サブスクリプションの解約方法</h2>
+      <h2>1. よくある質問</h2>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. Today's Scheduleウィジェットに何も表示されません！</p>
+        <p class="faq-a">A. Today's Scheduleウィジェットは初回同期が必要です。ルーティンやスケジュールを追加すると、すぐに同期されて正常に表示されます。</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. ウィジェットのテーマを変更できますか？</p>
+        <p class="faq-a">A. はい、変更できます！ウィジェット右上の歯車ボタンをタップしてテーマを変更してください。</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. 希望する機能があります。リクエストできますか？</p>
+        <p class="faq-a">A. はい！FOMはいつでもみなさんのご意見に耳を傾けています。上の「チャットサポートはこちら」をタップして機能をリクエストしてください。多くのユーザーからリクエストがある機能はアップデートに反映します！</p>
+      </div>
+
+      <h2>2. サブスクリプションの解約方法</h2>
       <p>定期購読の解約はアプリ内では行えません。各ストアのアカウント設定からお客様ご自身で管理していただく必要があります。</p>
       <h3>iOS (Apple App Store)</h3>
       <ul>
@@ -259,16 +329,16 @@
       <ul>
         <li><strong>Google Play ストア</strong>アプリを開く</li>
         <li>右上の<strong>プロフィールアイコン</strong>をタップ</li>
-        <li><strong>「お支払いと定期購入」</strong> > <strong>「定期購入」</strong>を選択</li>
+        <li><strong>「お支払いと定期購入」</strong> &gt; <strong>「定期購入」</strong>を選択</li>
         <li>一覧から<strong>「Focus On Me」</strong>を選択</li>
         <li><strong>「定期購入を解約」</strong>をタップ</li>
       </ul>
 
-      <h2>2. プロモーション/割引コードの使用方法</h2>
+      <h2>3. プロモーション/割引コードの使用方法</h2>
       <p>お手持ちのコードは、以下の手順でご利用いただけます。</p>
       <ul>
-        <li><strong>iOS (Apple):</strong> App Store アプリ > 右上のアカウントアイコン > <strong>「ギフトカードまたはコードを使う」</strong></li>
-        <li><strong>Android (Google):</strong> Play ストア > お支払いと定期購入 > <strong>「コードの利用」</strong></li>
+        <li><strong>iOS (Apple):</strong> App Store アプリ &gt; 右上のアカウントアイコン &gt; <strong>「ギフトカードまたはコードを使う」</strong></li>
+        <li><strong>Android (Google):</strong> Play ストア &gt; お支払いと定期購入 &gt; <strong>「コードの利用」</strong></li>
       </ul>
     </div>
 
@@ -285,6 +355,7 @@
         <div class="notice-box">
           ✅ Bei Fragen zu Zahlung oder Abonnement wenden Sie sich bitte direkt an den <strong>Google Play Store</strong> oder <strong>Apple App Store</strong> — diese werden nicht über die App verwaltet.
         </div>
+        <p>Sie können uns gerne auf Koreanisch, Englisch, Deutsch oder Japanisch kontaktieren – ganz wie es Ihnen am liebsten ist.</p>
         <p>Bitte teilen Sie uns folgende Informationen mit, damit wir Ihnen schneller helfen können 😊</p>
         <ul>
           <li>Ihr Smartphone-Modell</li>
@@ -293,7 +364,24 @@
         <p>Unser Entwicklungsteam wird sich so schnell wie möglich darum kümmern!</p>
       </div>
 
-      <h2>1. Abonnement kündigen</h2>
+      <h2>1. Häufig gestellte Fragen</h2>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. Im Today's Schedule-Widget wird nichts angezeigt!</p>
+        <p class="faq-a">A. Das Today's Schedule-Widget benötigt eine einmalige Synchronisierung. Fügen Sie einfach eine Routine oder einen Termin hinzu – das Widget synchronisiert sich sofort und wird korrekt angezeigt.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. Kann ich das Widget-Theme ändern?</p>
+        <p class="faq-a">A. Ja! Tippen Sie auf das Zahnrad-Symbol oben rechts im Widget, um das Theme zu ändern.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Q. Ich habe einen Funktionswunsch. Kann ich ihn einreichen?</p>
+        <p class="faq-a">A. Natürlich! FOM hört immer auf Ihr Feedback. Tippen Sie oben auf „Live-Chat starten", um Ihren Vorschlag einzureichen. Wenn viele Nutzer dasselbe Feature anfragen, wird es in einem zukünftigen Update berücksichtigt!</p>
+      </div>
+
+      <h2>2. Abonnement kündigen</h2>
       <p>Abonnements werden nicht innerhalb der App, sondern über die Kontoeinstellungen Ihres jeweiligen App Stores verwaltet.</p>
       <h3>iOS (Apple App Store)</h3>
       <ul>
@@ -307,16 +395,16 @@
       <ul>
         <li>Öffnen Sie die <strong>Google Play Store</strong>-App</li>
         <li>Tippen Sie oben rechts auf das <strong>Profilsymbol</strong></li>
-        <li>Gehen Sie zu <strong>Zahlungen &amp; Abonnements</strong> > <strong>Abonnements</strong></li>
+        <li>Gehen Sie zu <strong>Zahlungen &amp; Abonnements</strong> &gt; <strong>Abonnements</strong></li>
         <li>Wählen Sie <strong>Focus On Me</strong> aus der Liste</li>
         <li>Tippen Sie auf <strong>Abo kündigen</strong></li>
       </ul>
 
-      <h2>2. Promotion-/Rabattcode einlösen</h2>
+      <h2>3. Promotion-/Rabattcode einlösen</h2>
       <p>Sie können Ihren Code über die folgenden Store-Menüs einlösen:</p>
       <ul>
-        <li><strong>iOS (Apple):</strong> App Store > Account-Symbol (oben rechts) > <strong>Karte oder Code einlösen</strong></li>
-        <li><strong>Android (Google):</strong> Play Store > Zahlungen &amp; Abonnements > <strong>Code einlösen</strong></li>
+        <li><strong>iOS (Apple):</strong> App Store &gt; Account-Symbol (oben rechts) &gt; <strong>Karte oder Code einlösen</strong></li>
+        <li><strong>Android (Google):</strong> Play Store &gt; Zahlungen &amp; Abonnements &gt; <strong>Code einlösen</strong></li>
       </ul>
     </div>
 
