@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus On Me - Account Deletion / 계정 삭제 안내</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1714;
+      color: #e0dcd8;
+      line-height: 1.75;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 40px;
+    }
+    .lang-switch button {
+      padding: 8px 20px;
+      border: 1px solid #ff7f11;
+      border-radius: 20px;
+      background: transparent;
+      color: #ff7f11;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-switch button.active {
+      background: #ff7f11;
+      color: #fff;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    h1 span { color: #ff7f11; }
+    .date {
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ff7f11;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+    p, li {
+      font-size: 15px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 10px;
+    }
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+    li { margin-bottom: 6px; }
+    strong { color: rgba(255,255,255,0.9); }
+    a { color: #ff7f11; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.2);
+    }
+    .section { display: none; }
+    .section.active { display: block; }
+    .highlight-box {
+      background: rgba(255,127,17,0.08);
+      border: 1px solid rgba(255,127,17,0.25);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <button class="active" onclick="switchLang('ko')">한국어</button>
+      <button onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- 한국어 -->
+    <div id="ko" class="section active">
+      <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
+      <h1>계정 삭제 안내</h1>
+      <p class="date">최종 업데이트: 2026년 6월 12일</p>
+
+      <p><strong>「Focus On Me」(FOM)</strong> 앱(개발자: <strong>LIVX</strong>)의 계정 및 관련 데이터 삭제 방법을 안내합니다.</p>
+      <div class="highlight-box">
+        <p>계정은 클라우드 동기화(선택 기능)를 위해 Apple/Google로 로그인한 경우에만 생성됩니다. 로그인 없이 앱만 사용하셨다면 삭제할 계정이 존재하지 않습니다.</p>
+      </div>
+
+      <h2>방법 1. 앱에서 직접 삭제 (권장 — 즉시 처리)</h2>
+      <ol>
+        <li>FOM 앱 실행 → <strong>설정</strong> 탭</li>
+        <li><strong>클라우드 동기화</strong> 메뉴 진입 (로그인 상태 확인)</li>
+        <li>하단의 <strong>「계정 삭제」</strong> 버튼 선택</li>
+        <li>안내 확인 후 <strong>「영구 삭제」</strong>로 최종 확인</li>
+      </ol>
+      <p>완료 즉시 계정과 클라우드 데이터가 영구 삭제되며, 복구할 수 없습니다.</p>
+
+      <h2>방법 2. 이메일로 삭제 요청 (앱 접근이 어려운 경우)</h2>
+      <p>앱을 이미 삭제했거나 기기에 접근할 수 없는 경우, 아래로 요청해 주세요.</p>
+      <ul>
+        <li><strong>이메일:</strong> <a href="mailto:ceo@livx.kr?subject=FOM 계정 삭제 요청">ceo@livx.kr</a></li>
+        <li><strong>제목:</strong> "FOM 계정 삭제 요청"</li>
+        <li><strong>본문에 기재:</strong> 가입에 사용한 로그인 방식(Apple 또는 Google)과 해당 이메일 주소</li>
+      </ul>
+      <p>요청 확인 후 <strong>영업일 기준 7일 이내</strong> 처리해 드립니다.</p>
+
+      <h2>삭제되는 데이터</h2>
+      <ul>
+        <li>계정 정보 (이메일 주소, Apple/Google 로그인 식별자)</li>
+        <li>클라우드 서버에 저장된 모든 동기화 데이터 — 일기, 사진, 루틴, 디데이, 할 일, 채팅 백업, 설정 등</li>
+      </ul>
+      <p>위 데이터는 삭제 시 <strong>지체 없이 영구 삭제</strong>되며, <strong>추가 보관 기간은 없습니다.</strong></p>
+
+      <h2>삭제 대상이 아닌 데이터</h2>
+      <ul>
+        <li><strong>기기 내 로컬 데이터:</strong> 회사 서버에 없으며 회사가 접근할 수 없습니다. 앱에서 직접 삭제하거나 앱을 제거하면 삭제됩니다.</li>
+        <li><strong>익명 사용 통계:</strong> 무작위 식별자로만 구분되어 특정 사용자의 데이터로 식별할 수 없습니다(신원 비연결).</li>
+        <li><strong>구매·결제 기록:</strong> Apple App Store / Google Play가 자체 정책에 따라 관리합니다.</li>
+      </ul>
+
+      <h2>문의</h2>
+      <ul>
+        <li><strong>운영사:</strong> LIVX</li>
+        <li><strong>이메일:</strong> <a href="mailto:ceo@livx.kr">ceo@livx.kr</a></li>
+      </ul>
+    </div>
+
+    <!-- English -->
+    <div id="en" class="section">
+      <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
+      <h1>Account Deletion</h1>
+      <p class="date">Last Updated: June 12, 2026</p>
+
+      <p>This page explains how to delete your account and related data for the <strong>"Focus On Me" (FOM)</strong> app, developed by <strong>LIVX</strong>.</p>
+      <div class="highlight-box">
+        <p>An account is created only if you sign in with Apple/Google for the optional Cloud Sync feature. If you have never signed in, no account exists to delete.</p>
+      </div>
+
+      <h2>Option 1. Delete in the App (Recommended — immediate)</h2>
+      <ol>
+        <li>Open the FOM app → <strong>Settings</strong> tab</li>
+        <li>Open <strong>Cloud Sync</strong> (make sure you are signed in)</li>
+        <li>Tap <strong>"Delete Account"</strong> at the bottom</li>
+        <li>Review the notice and confirm with <strong>"Delete Permanently"</strong></li>
+      </ol>
+      <p>Your account and cloud data are permanently deleted immediately and cannot be recovered.</p>
+
+      <h2>Option 2. Request by Email (if you cannot access the app)</h2>
+      <p>If you have already uninstalled the app or cannot access your device, contact us:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:ceo@livx.kr?subject=FOM Account Deletion Request">ceo@livx.kr</a></li>
+        <li><strong>Subject:</strong> "FOM Account Deletion Request"</li>
+        <li><strong>Include:</strong> the sign-in method you used (Apple or Google) and the email address associated with it</li>
+      </ul>
+      <p>Requests are processed within <strong>7 business days</strong> of verification.</p>
+
+      <h2>Data That Will Be Deleted</h2>
+      <ul>
+        <li>Account information (email address, Apple/Google sign-in identifier)</li>
+        <li>All synced data stored on our cloud servers — diaries, photos, routines, D-Days, to-dos, chat backups, settings, etc.</li>
+      </ul>
+      <p>This data is <strong>permanently deleted without delay</strong>, with <strong>no additional retention period.</strong></p>
+
+      <h2>Data Not Subject to This Deletion</h2>
+      <ul>
+        <li><strong>Local data on your device:</strong> never stored on our servers and inaccessible to us. Delete it in the app or by uninstalling the app.</li>
+        <li><strong>Anonymous usage statistics:</strong> identified only by a randomly generated identifier and cannot be linked to any individual.</li>
+        <li><strong>Purchase records:</strong> managed by Apple App Store / Google Play under their own policies.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Company:</strong> LIVX</li>
+        <li><strong>Email:</strong> <a href="mailto:ceo@livx.kr">ceo@livx.kr</a></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      © 2026 LIVX. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

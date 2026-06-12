@@ -100,13 +100,18 @@
     <div id="ko" class="section active">
       <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
       <h1>개인정보처리방침</h1>
-      <p class="date">시행일: 2026년 4월 21일</p>
+      <p class="date">시행일: 2026년 6월 12일 (최초 시행: 2026년 4월 21일)</p>
 
       <p>LIVX(이하 "회사")는 「Focus On Me」(이하 "앱") 이용자의 개인정보를 소중히 여기며, 관련 법령에 따라 아래와 같이 개인정보처리방침을 수립·공개합니다.</p>
 
       <h2>1. 수집하는 개인정보</h2>
-      <p>본 앱은 <strong>별도의 회원가입이나 로그인 절차가 없으며</strong>, 원칙적으로 서버로 개인정보를 전송하지 않습니다.</p>
-      <p>앱에서 입력하는 대부분의 데이터(루틴, 일기, 사진, 할 일, 통계 등)는 <strong>사용자의 기기 내에만 저장</strong>됩니다. 단, 선택적 기능인 <strong>AI 어시스턴트(FomiChat)</strong>를 사용하는 경우 일부 데이터가 응답 생성을 위해 외부 서버로 전송될 수 있습니다. 자세한 내용은 <strong>4조</strong>를 참고해 주세요.</p>
+      <p>본 앱은 <strong>회원가입 없이 사용할 수 있으며</strong>, 앱에서 입력하는 대부분의 데이터(루틴, 일기, 사진, 할 일, 통계 등)는 <strong>사용자의 기기 내에만 저장</strong>됩니다.</p>
+      <p>다만 다음의 경우에 한해 일부 데이터가 서버로 전송됩니다:</p>
+      <ul>
+        <li>선택 기능인 <strong>AI 어시스턴트(FomiChat)</strong> 사용 시 — <strong>4조</strong> 참고</li>
+        <li>선택 기능인 <strong>클라우드 동기화</strong>(Apple/Google 로그인) 사용 시 — <strong>5조</strong> 참고</li>
+        <li>서비스 개선을 위한 <strong>익명 사용 통계</strong> — <strong>6조</strong> 참고</li>
+      </ul>
 
       <h2>2. 기기 내 저장 데이터</h2>
       <p>앱의 기능 제공을 위해 다음 데이터가 기기 로컬 저장소(AsyncStorage)에 저장됩니다:</p>
@@ -123,7 +128,7 @@
       <p>이 데이터는 앱을 삭제하면 함께 삭제되며, 회사는 이 데이터에 접근할 수 없습니다.</p>
 
       <h2>3. 제3자 제공</h2>
-      <p>본 앱은 FomiChat 기능을 제외하고 사용자 데이터를 <strong>제3자에게 제공하지 않습니다.</strong> FomiChat의 외부 데이터 처리에 대해서는 4조를 참고해 주세요.</p>
+      <p>본 앱은 사용자 데이터를 <strong>제3자에게 판매하거나 광고 목적으로 제공하지 않습니다.</strong> 서비스 제공에 필요한 외부 처리(AI 응답 생성 — 4조, 클라우드 저장 — 5조)에 한해 수탁 업체가 회사를 대신하여 데이터를 처리합니다.</p>
 
       <h2>4. AI 어시스턴트 (FomiChat)</h2>
       <div class="highlight-box">
@@ -142,19 +147,36 @@
       <p><strong>데이터 보존:</strong> 전송된 데이터는 응답 처리 후 서버에 저장되지 않습니다.</p>
       <p><strong>선택적 기능:</strong> FomiChat은 선택 사항이며, 앱 설정에서 데이터 공유를 언제든지 비활성화할 수 있습니다. 비활성화 시 어떠한 데이터도 외부로 전송되지 않습니다.</p>
 
-      <h2>5. 알림(푸시 알림)</h2>
+      <h2>5. 클라우드 동기화 및 계정 (선택)</h2>
+      <div class="highlight-box">
+        <p>클라우드 동기화는 <strong>선택 기능</strong>입니다. Apple 또는 Google 계정으로 로그인한 경우에만 아래 내용이 적용됩니다.</p>
+      </div>
+      <p><strong>수집 항목:</strong> 이메일 주소, Apple/Google 로그인 식별자</p>
+      <p><strong>저장되는 데이터:</strong> 동기화를 켠 경우 일기, 사진, 루틴, 디데이, 할 일, 채팅 백업, 설정이 백업·복원을 위해 회사의 클라우드 서버에 암호화되어 전송·저장됩니다. (데이터베이스: Supabase, 이미지 저장소: Cloudflare R2)</p>
+      <p><strong>보관 기간:</strong> 계정 삭제 시까지 보관하며, 계정을 삭제하면 모든 클라우드 데이터가 지체 없이 영구 삭제됩니다.</p>
+      <p><strong>삭제 방법:</strong> <a href="./delete-account.html">계정 삭제 안내</a> · <a href="./delete-data.html">데이터 삭제 요청</a></p>
+
+      <h2>6. 익명 사용 통계</h2>
+      <p>서비스 개선을 위해 <strong>익명화된 사용 통계</strong>(화면 조회, 기능 사용 횟수, 앱 실행 등)를 수집합니다.</p>
+      <ul>
+        <li>이 데이터는 <strong>무작위로 생성된 식별자</strong>로만 구분되며, 이름·이메일 등 <strong>이용자의 신원과 연결되지 않습니다.</strong></li>
+        <li>일기·채팅 내용, 사진, 루틴 텍스트 등 <strong>개인 콘텐츠는 수집하지 않습니다.</strong></li>
+        <li>광고 또는 타 앱·서비스 추적 목적으로 <strong>사용되지 않습니다.</strong></li>
+      </ul>
+
+      <h2>7. 알림(푸시 알림)</h2>
       <p>사용자가 루틴 알림을 설정한 경우, 기기의 로컬 알림 기능을 사용합니다. 이는 외부 서버를 거치지 않으며, 사용자가 설정한 시간에 기기에서 직접 발생합니다.</p>
 
-      <h2>6. 사진 접근 권한</h2>
-      <p>사진 카드 기능에서 기기의 사진 라이브러리 접근 권한을 요청할 수 있습니다. 선택한 사진은 앱 내에서만 사용되며, 외부로 전송되지 않습니다.</p>
+      <h2>8. 사진 접근 권한</h2>
+      <p>사진 카드 기능에서 기기의 사진 라이브러리 접근 권한을 요청할 수 있습니다. 선택한 사진은 기본적으로 앱 내에서만 사용되며, <strong>클라우드 동기화를 켠 경우에 한해</strong> 백업을 위해 서버로 전송될 수 있습니다(5조 참고).</p>
 
-      <h2>7. 아동의 개인정보</h2>
+      <h2>9. 아동의 개인정보</h2>
       <p>본 앱은 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
 
-      <h2>8. 개인정보처리방침의 변경</h2>
+      <h2>10. 개인정보처리방침의 변경</h2>
       <p>본 방침이 변경되는 경우, 변경 사항을 이 페이지에 게시하며 시행일을 업데이트합니다.</p>
 
-      <h2>9. 문의</h2>
+      <h2>11. 문의</h2>
       <p>개인정보 관련 문의사항이 있으시면 아래로 연락해 주세요.</p>
       <ul>
         <li><strong>운영사:</strong> LIVX</li>
@@ -167,13 +189,18 @@
     <div id="en" class="section">
       <h1><span>F</span>ocus <span>O</span>n <span>M</span>e</h1>
       <h1>Privacy Policy</h1>
-      <p class="date">Effective Date: April 21, 2026</p>
+      <p class="date">Effective Date: June 12, 2026 (Originally effective: April 21, 2026)</p>
 
       <p>LIVX ("Company") values the privacy of users of the "Focus On Me" application ("App") and has established this Privacy Policy in accordance with applicable laws.</p>
 
       <h2>1. Information We Collect</h2>
-      <p>This App <strong>does not require registration or login</strong>, and as a general rule does not transmit personal information to external servers.</p>
-      <p>Most data entered in the App (routines, diary entries, photos, to-dos, statistics, etc.) is <strong>stored only on your device</strong>. However, if you choose to use the optional <strong>AI Assistant (FomiChat)</strong> feature, some data may be sent to an external server to generate responses. Please refer to <strong>Section 4</strong> for details.</p>
+      <p>This App <strong>can be used without registration</strong>, and most data entered in the App (routines, diary entries, photos, to-dos, statistics, etc.) is <strong>stored only on your device</strong>.</p>
+      <p>Data is transmitted to servers only in the following cases:</p>
+      <ul>
+        <li>When using the optional <strong>AI Assistant (FomiChat)</strong> — see <strong>Section 4</strong></li>
+        <li>When using optional <strong>Cloud Sync</strong> (Apple/Google sign-in) — see <strong>Section 5</strong></li>
+        <li><strong>Anonymous usage statistics</strong> for service improvement — see <strong>Section 6</strong></li>
+      </ul>
 
       <h2>2. Data Stored on Your Device</h2>
       <p>The following data is stored locally on your device (AsyncStorage) to provide App functionality:</p>
@@ -190,7 +217,7 @@
       <p>This data is deleted when you uninstall the App. The Company has no access to this data.</p>
 
       <h2>3. Third-Party Sharing</h2>
-      <p>This App <strong>does not share user data with any third parties</strong>, except as described in Section 4 regarding the FomiChat feature.</p>
+      <p>This App <strong>does not sell user data or share it for advertising purposes.</strong> Data is processed by service providers on our behalf only as needed to operate the service (AI response generation — Section 4; cloud storage — Section 5).</p>
 
       <h2>4. AI Assistant (FomiChat)</h2>
       <div class="highlight-box">
@@ -209,19 +236,36 @@
       <p><strong>Data Retention:</strong> Transmitted data is not stored on the server after processing.</p>
       <p><strong>Optional Feature:</strong> FomiChat is entirely optional. You can disable data sharing at any time in the App settings. When disabled, no data is transmitted externally.</p>
 
-      <h2>5. Notifications</h2>
+      <h2>5. Cloud Sync &amp; Account (Optional)</h2>
+      <div class="highlight-box">
+        <p>Cloud Sync is an <strong>optional feature</strong>. The following applies only if you sign in with an Apple or Google account.</p>
+      </div>
+      <p><strong>Information collected:</strong> email address, Apple/Google sign-in identifier</p>
+      <p><strong>Data stored:</strong> When sync is enabled, your diaries, photos, routines, D-Days, to-dos, chat backups, and settings are transmitted with encryption and stored on our cloud servers for backup and restore. (Database: Supabase; image storage: Cloudflare R2)</p>
+      <p><strong>Retention:</strong> Until account deletion. When you delete your account, all cloud data is permanently deleted without delay.</p>
+      <p><strong>How to delete:</strong> <a href="./delete-account.html">Account Deletion</a> · <a href="./delete-data.html">Data Deletion Request</a></p>
+
+      <h2>6. Anonymous Usage Statistics</h2>
+      <p>We collect <strong>anonymized usage statistics</strong> (screen views, feature usage counts, app launches, etc.) to improve the service.</p>
+      <ul>
+        <li>This data is identified only by a <strong>randomly generated identifier</strong> and is <strong>never linked to your identity</strong> (name, email, etc.).</li>
+        <li><strong>No personal content is collected</strong> — no diary or chat text, photos, or routine names.</li>
+        <li>It is <strong>never used for advertising or cross-app tracking.</strong></li>
+      </ul>
+
+      <h2>7. Notifications</h2>
       <p>If you set routine reminders, the App uses your device's local notification system. Notifications are triggered locally on your device and do not pass through any external servers.</p>
 
-      <h2>6. Photo Library Access</h2>
-      <p>The App may request access to your device's photo library for the photo card feature. Selected photos are used only within the App and are never transmitted externally.</p>
+      <h2>8. Photo Library Access</h2>
+      <p>The App may request access to your device's photo library for the photo card feature. Selected photos are used within the App by default, and are transmitted to our servers <strong>only if you enable Cloud Sync</strong> (see Section 5).</p>
 
-      <h2>7. Children's Privacy</h2>
+      <h2>9. Children's Privacy</h2>
       <p>This App does not intentionally collect personal information from children under the age of 14.</p>
 
-      <h2>8. Changes to This Policy</h2>
+      <h2>10. Changes to This Policy</h2>
       <p>If this Privacy Policy is updated, changes will be posted on this page with an updated effective date.</p>
 
-      <h2>9. Contact Us</h2>
+      <h2>11. Contact Us</h2>
       <p>If you have any questions about this Privacy Policy, please contact us:</p>
       <ul>
         <li><strong>Company:</strong> LIVX</li>
